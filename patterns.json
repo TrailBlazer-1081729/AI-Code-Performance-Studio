@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Breadth-First Search (BFS)",
+        "required_features": ["deque", "popleft"],
+        "time": "O(V + E)",
+        "space": "O(V)"
+    },
+    {
+        "name": "Priority Queue / Heap",
+        "required_features": ["heap"],
+        "time": "Depends on usage",
+        "space": "Depends on usage"
+    },
+    {
+        "name": "Sorting",
+        "required_features": ["sort"],
+        "time": "Usually O(n log n)",
+        "space": "Depends on implementation"
+    },
+    {
+        "name": "Hash Map Usage",
+        "required_features": ["dict"],
+        "time": "Average O(1) lookup",
+        "space": "O(n)"
+    },
+    {
+        "name": "Set Usage",
+        "required_features": ["set"],
+        "time": "Average O(1) lookup",
+        "space": "O(n)"
+    },
+    {
+        "name": "Binary Search Structure",
+        "required_features": ["binary_search_mid"],
+        "time": "Verify from implementation",
+        "space": "Verify from implementation"
+    },
+    {
+        "name": "Memoization Structure",
+        "required_features": ["dict", "memo_lookup"],
+        "time": "Verify from state transitions",
+        "space": "Usually O(number of states)"
+    },
+    {
+        "name": "Recursion Structure",
+        "required_features": ["recursion"],
+        "time": "Verify from recurrence relation",
+        "space": "Verify from recursion depth and allocations"
+    },
+    {
+        "name": "List Slicing",
+        "required_features": ["slicing"],
+        "time": "O(k)",
+        "space": "O(k)"
+    },
+    {
+        "name": "List Comprehension",
+        "required_features": ["list_comprehension"],
+        "time": "Usually O(n)",
+        "space": "Usually O(n)"
+    },
+    {
+        "name": "Generator Usage",
+        "required_features": ["generator"],
+        "time": "Depends on iteration count",
+        "space": "Typically O(1) incremental"
+    }
+]
