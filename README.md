@@ -117,7 +117,7 @@ User Code
 
 ### Complexity Analysis
 
-![Complexity Analysis](<img width="1856" height="831" alt="Screenshot 2026-06-16 152055" src="https://github.com/user-attachments/assets/a1a4761e-8c7c-454a-85c0-b007d06837d2" />)
+![Complexity Analysis](images/Screenshot 2026-06-16 152055.png)
 
 The AST analysis engine extracts structural features such as recursion patterns, loop nesting depth, collection usage, and algorithmic indicators before generating a complexity assessment.
 
@@ -128,14 +128,12 @@ The AST analysis engine extracts structural features such as recursion patterns,
 
 #### bench_mark_report
 
-![Runtime Benchmark](<img width="1680" height="640" alt="Screenshot 2026-06-16 152116" src="https://github.com/user-attachments/assets/088b1fa6-76f4-4dde-bc5e-8817ca7077a6" />
-)
+![Runtime Benchmark](images/Screenshot 2026-06-16 152116.png)
 
 
 #### Time and Memory Usage
 
-![Memory Benchmark](<img width="1683" height="869" alt="Screenshot 2026-06-16 152123" src="https://github.com/user-attachments/assets/46d914f1-0377-4da2-b27b-8a4168a2fdc0" />
-)
+![Memory Benchmark](images/Screenshot 2026-06-16 152123.png)
 
 Tracks time and  peak memory consumption during benchmark execution to identify memory-growth patterns and potential bottlenecks.
 
@@ -143,8 +141,7 @@ Tracks time and  peak memory consumption during benchmark execution to identify 
 
 ### AI Performance Report
 
-![Performance Report](<img width="1825" height="804" alt="Screenshot 2026-06-16 152208" src="https://github.com/user-attachments/assets/d700f09a-34e9-4bfa-8aae-5a0b55638ac7" />
-)
+![Performance Report](images/Screenshot 2026-06-16 152208.png)
 
 Generates a comprehensive engineering report using benchmark measurements, complexity estimates, runtime projections, and memory statistics produced by the analysis engine.
 
