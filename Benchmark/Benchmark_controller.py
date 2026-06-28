@@ -28,6 +28,15 @@ class BenchmarkController:
 
     def generate_sizes(self):
         sizes = []
+        if self.max_n <=500:
+            return [
+                50,
+                100,
+                150,
+                min(250,self.max_n),
+                self.max_n
+            ]
+            
 
         current = max(
             100,
@@ -86,6 +95,10 @@ class BenchmarkController:
                 "size": size,
                 **stats
             })
+            if stats["avg_time"]>=3:
+                print("exiting early")
+                break
+                
             print(results)
         estimator = ComplexityEstimator()
 
