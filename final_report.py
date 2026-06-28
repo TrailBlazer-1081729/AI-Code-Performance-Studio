@@ -37,20 +37,6 @@ def format_runtime(value):
         return "Infinity"
     return str(value)
 
-
-def test_gemini(client):
-    print("RUNNING MICRO-TEST...")
-    try:
-        response = client.chat.completions.create(
-            model="gemini-2.5-flash",
-            messages=[{"role": "user", "content": "Reply with OK"}],
-            timeout=10,
-        )
-        print("MICRO-TEST RESPONSE:", response.choices[0].message.content.strip())
-    except Exception as e:
-        print("MICRO-TEST FAILED:", repr(e))
-
-
 def generate_report(tle_result):
     load_dotenv()
 
@@ -59,8 +45,6 @@ def generate_report(tle_result):
         api_key=os.getenv("google_key"),
         timeout=60,
     )
-
-    test_gemini(client)
 
     prediction = tle_result.get("prediction", {})
     benchmark_data = tle_result.get("benchmark_result", {})
@@ -164,7 +148,7 @@ Provide ordered engineering suggestions aligned structurally with the Selected C
     try:
         print("BEFORE API")
         response = client.chat.completions.create(
-            model="gemini-2.5-flash",
+            model="gemini-3.1-flash-lite",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
