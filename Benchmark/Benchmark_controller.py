@@ -36,7 +36,7 @@ class BenchmarkController:
 
         while current <= self.max_n:
             sizes.append(current)
-            current *= 4
+            current *= 2
 
         return sizes
 
